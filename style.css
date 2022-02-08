@@ -12,7 +12,7 @@
     box-sizing: border-box;
     backdrop-filter: blur(23px);
     border-radius: 24px;
-    padding: 10px;
+    padding: 8px 9px;
     position: absolute;
     bottom: 25px;
     left: 50%;
@@ -66,7 +66,7 @@
     box-sizing: border-box;
     backdrop-filter: blur(23px);
     border-radius: 24px;
-    padding: 18px 32px;
+    padding: 16px 32px;
 }
 
 .search__area .main .input_area input {
@@ -76,6 +76,11 @@
     font: normal normal 14px/21px Poppins;
     color: #333333;
 }
+.search__area .main .input_area input::placeholder { 
+    font: normal normal 14px/21px Poppins;
+    color: #333333;
+    opacity: 1; 
+  }
 
 .search__area .main .results {
     margin-top: 25px;
@@ -104,13 +109,19 @@
     }
     .search__area .main .input_area{
         width: 435px;
-        padding: 18px 24px;
+        padding: 16px 24px;
     }
 }
 @media only screen and (max-width: 400px){
+    .search__area .top__menu{
+        padding-top: 60px;
+    }
+    .search__area .top__menu img{
+        width: 48px;
+    }
     .search__area .main .input_area{
         width: 335px;
-        padding: 18px 24px;
+        padding: 16px 24px;
     }
     .search__area .main .results .item {
         font: normal 500 10px/15px Poppins;
