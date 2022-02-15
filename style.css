@@ -79,7 +79,10 @@
     color: #333333;
     opacity: 1; 
   }
-
+  .search__area .main .input_area button {
+      display: flex;
+      align-items: center;
+  }
 .search__area .main .results {
     margin-top: 25px;
     display: flex;
