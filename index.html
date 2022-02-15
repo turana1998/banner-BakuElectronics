@@ -31,14 +31,14 @@
                     <div class="input_area">
                         <form action="#" class="d-flex justify-content-between">
                             <input type="text" placeholder="Axtar..." name="search">
-                            <button type="button" class="border-0 outline-0 bg-transparent">
+                            <button type="submit" class="border-0 outline-0 bg-transparent">
                                 <img src="./img/search.svg">
                             </button>
                         </form>
                     </div>
                     <div class="results">
                         <div class="item">
-                            Canon  MF4410
+                            Canon MF4410
                         </div>
                         <div class="item">
                             Canon 2520 Driver
@@ -53,8 +53,15 @@
                 </div>
             </div>
         </div>
-        <button class="scrool"><img src="./img/scroll.png" alt="scroll"></button>
+        <div>
+            <a href="#" class="scroll-play-button"><img src="./img/scroll.png" /></a>
+        </div>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        let images = ['bg.png', 'bg2.png',  'bg3.png'];
+        $('.search__area').css({ 'background-image': 'url(./img/' + images[Math.floor(Math.random() * images.length)] + ')' });
+    </script>
 </body>
 
 </html>
